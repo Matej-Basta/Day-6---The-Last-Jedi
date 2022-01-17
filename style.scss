@@ -117,7 +117,6 @@ nav {
   }
 
   &__container {
-    background-color: pink;
     @include h(20%);
     @include w(800px);
     margin: auto;
@@ -132,20 +131,74 @@ nav {
       border-radius: 50%;
 
       &.center {
-        @include w(130px);
+        @include w(140px);
       }
 
       &.nd-to-center {
-        @include w(110px);
+        @include w(120px);
       }
 
       &.nd-to-edge {
-        @include w(90px);
+        @include w(100px);
       }
 
       &.edge {
-        @include w(70px);
+        @include w(80px);
       }
+    }
+  }
+}
+
+.ratings {
+  @include h(100vh);
+  padding-top: 3rem;
+  background-color: $lightGray;
+
+  &__heading {
+    @include header;
+  }
+
+  &__container {
+    @include w(800px);
+    @include h(75vh);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  &__cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &--left {
+      background-color: $gray;
+      @include w(200px);
+      @include h(337.5px);
+      margin: 0.5rem 0rem 1rem;
+    }
+
+    &--center {
+      background-color: $gray;
+      @include w(200px);
+      @include h(405px);
+      margin: 0.5rem 0rem 1rem;
+    }
+
+    &--right {
+      background-color: $gray;
+      @include w(200px);
+      @include h(382.5px);
+      margin: 0.5rem 0rem 1rem;
+    }
+
+    &--rating {
+      @include fs(1.6rem);
+    }
+
+    &--site {
+      @include fs(1.2rem);
     }
   }
 }
