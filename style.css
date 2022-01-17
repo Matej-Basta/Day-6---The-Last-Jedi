@@ -1,0 +1,123 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Verdana;
+}
+
+.header {
+  background-color: #5f5a5a;
+  background-image: url(img/welcome.jpg);
+  background-size: 100vw 80vh;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  color: #ffffff;
+  text-align: center;
+}
+.header__container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__container__heading1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.header__container__heading2 {
+  font-size: 2.5rem;
+  color: #5f5a5a;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.plot {
+  height: 90vh;
+  background-color: #ebebeb;
+  padding-top: 3rem;
+}
+.plot__heading {
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.plot__container {
+  width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.plot__container img {
+  width: 40%;
+}
+.plot__text {
+  padding: 4rem 2rem;
+}
+.plot__text p {
+  margin-bottom: 2rem;
+}
+.plot__text--paragraph1 {
+  font-size: 1.4rem;
+}
+
+.characters {
+  height: 100vh;
+  background-image: url(img/rey-standing.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding-top: 3rem;
+  position: relative;
+}
+.characters__heading {
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.characters__container {
+  background-color: pink;
+  height: 20%;
+  width: 800px;
+  margin: auto;
+  position: absolute;
+  bottom: 2rem;
+  left: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.characters__container img {
+  border-radius: 50%;
+}
+.characters__container img.center {
+  width: 130px;
+}
+.characters__container img.nd-to-center {
+  width: 110px;
+}
+.characters__container img.nd-to-edge {
+  width: 90px;
+}
+.characters__container img.edge {
+  width: 70px;
+}
