@@ -211,4 +211,67 @@ nav {
   &__heading {
     @include header;
   }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    @include w(800px);
+    margin: auto;
+
+    &__text {
+      padding: 2rem;
+
+      h4 {
+        margin-bottom: 1rem;
+        @include fs(1.6rem);
+      }
+    }
+  }
+
+  &__container2 {
+    @include h(30%);
+    @include w(800px);
+    display: flex;
+    margin: 3rem auto 0rem;
+    gap: 1rem;
+
+    div {
+      position: relative;
+      color: white;
+      text-align: center;
+
+      img {
+        @include w(100%);
+      }
+
+      p {
+        position: absolute;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        padding: 0.5rem;
+        width: 100%;
+        bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.gallery {
+  background-color: $lightGray;
+  @include h(100vh);
+  padding-top: 2rem;
+
+  &__heading {
+    @include header;
+  }
+
+  &__container {
+    @include w(100%);
+    @include h(70vh);
+
+    img {
+      @include w(100%);
+    }
+  }
 }
