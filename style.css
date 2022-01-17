@@ -169,3 +169,15 @@ nav a {
 .ratings__cont--site {
   font-size: 1.2rem;
 }
+
+.cast {
+  background-color: #ebebeb;
+  height: 100vh;
+  padding-top: 3rem;
+}
+.cast__heading {
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
