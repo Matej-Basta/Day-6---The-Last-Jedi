@@ -267,11 +267,13 @@ nav {
   }
 
   &__container {
+    background-color: pink;
     @include w(100%);
-    @include h(70vh);
+    @include h(80vh);
 
     img {
       @include w(100%);
+      @include h(100%);
     }
   }
 }
